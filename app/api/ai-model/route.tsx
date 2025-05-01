@@ -11,8 +11,9 @@ const openai = new OpenAI({
   }
 })
 
-
-export const maxDuration = 300;
+export const config = {
+    maxDuration: 60 
+  };  
 
 export async function POST(req: NextRequest) {
 
