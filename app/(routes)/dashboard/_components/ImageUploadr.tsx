@@ -13,7 +13,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { useRouter } from "next/navigation"
 import Constants from "../../../../data/constant"
 import useUserAuth from "@/hooks/userAuth"
-import { toast } from "sonner" // Import toast notification library
+import { toast } from "sonner" 
 
 const ImageUploadr = () => {
   const [preview, setPreview] = useState<string | null>(null)

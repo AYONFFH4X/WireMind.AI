@@ -10,11 +10,8 @@ const openai = new OpenAI({
       "X-Title": "Wirebase"
   }
 })
-export const config = {
-    maxDuration: 5, // Hobby-compatible
-  };
-  
-  export const runtime = 'edge'; 
+
+export const maxDuration = 300;
 
 export async function POST(req: NextRequest) {
 
