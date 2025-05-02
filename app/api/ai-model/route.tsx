@@ -21,7 +21,7 @@ export async function POST(req: NextRequest) {
     const modelName = ModelObj?.modelName;
     console.log(modelName);
     const response = await openai.chat.completions.create({
-        model: modelName ?? 'google/gemini-2.5-pro-exp-03-25',
+        model: modelName ?? 'google/gemini-2.0-flash-exp:free',
         stream: true,
         messages: [
             {
