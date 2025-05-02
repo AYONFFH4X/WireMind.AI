@@ -42,7 +42,7 @@ export async function POST(req: NextRequest) {
         ]
     });
 
-    // Create a readable stream to send data in real-time
+ 
     const stream = new ReadableStream({
         async start(controller) {
             for await (const chunk of response) {
